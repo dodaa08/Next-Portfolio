@@ -72,9 +72,9 @@ function Landing() {
             </div>
 
             {/* Footer Section */}
-            <footer className='flex justify-evenly cursor-pointer py-3'>
+            <footer className='flex justify-evenly cursor-pointer py-3 mb-4'>
                 <button>
-                    <Link href="/categories">
+                    <Link href="/cat">
                         <h1 className='text-xl hover:scale-110 transition duration-200 mr-4'>Categories</h1>
                     </Link>
                 </button>

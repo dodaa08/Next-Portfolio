@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from 'react';
 import { Github, Moon, Twitter, Linkedin, Youtube } from 'lucide-react';
@@ -9,7 +9,7 @@ function Landing() {
 
     const toggleDarkMode = () => {
         setDarkmode(!darkmode);
-    }
+    };
 
     return (
         <div className={`${darkmode ? 'bg-black text-white' : 'text-black bg-white'} h-screen w-screen flex flex-col`}>
@@ -32,20 +32,20 @@ function Landing() {
                     </li>
                     <li className='mt-2'>
                         <p>
-                             I've currently been learning about Solana Development and have worked with various tech stacks in both Web and Android Development.
+                            I&apos;ve currently been learning about Solana Development and have worked with various tech stacks in both Web and Android Development.
                         </p>
                         <br />
                         <p>
-                             Generally, I work with Next.js, TS/JS, React, TailwindCSS, Solidity, Rust, and Java. <br /> I more into Web3 Development and have been working on building a Decentralized Maeketplace using Solidity Contracts. <br /> I look forward to build and contribute to great web3 products, participate in hackathons and collaborate with other developers. 
+                            Generally, I work with Next.js, TS/JS, React, TailwindCSS, Solidity, Rust, and Java. <br /> I&apos;m more into Web3 Development and have been working on building a Decentralized Marketplace using Solidity Contracts. <br /> I look forward to building and contributing to great web3 products, participating in hackathons, and collaborating with other developers.
                         </p>
 
                         <br />
                         <ul>
                             <li>
-                                Besides coding I am a Movie geek and love to play sports.
+                                Besides coding, I am a Movie geek and love to play sports.
                             </li>
-                            <li>    
-                                I play Badminton and Football. here are some of my clips : "Soon!"
+                            <li>
+                                I play Badminton and Football. Here are some of my clips: &quot;Soon!&quot;
                             </li>
                         </ul>
                     </li>
@@ -75,7 +75,7 @@ function Landing() {
             <footer className='flex justify-evenly cursor-pointer py-3'>
                 <button>
                     <Link href="/categories">
-                    <h1 className='text-xl hover:scale-110 transition duration-200 mr-4'>Categories</h1>
+                        <h1 className='text-xl hover:scale-110 transition duration-200 mr-4'>Categories</h1>
                     </Link>
                 </button>
                 <button>

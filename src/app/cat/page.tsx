@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Github, Moon, Twitter, Linkedin, Youtube } from 'lucide-react';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -26,33 +26,33 @@ export default function Page() {
 
                 <div className="flex justify-between gap-4 mt-8 text-black mt-20">
                     <Link href="/projects">
-                <div className="bg-white shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
-      <div className="p-6">
-        <h2 className="text-2xl font-bold mb-2">Projects</h2>
-        <p className="text-gray-700 mb-4">
-          I've been trying to build a project every week. Here are some of them.
-        </p>
-        <div className="flex items-center justify-between">
-          <p className="text-gray-600 text-sm">November 3, 2024</p>
-          <p className="text-gray-600 text-sm">Kartik Doda</p>
-        </div>
-      </div>
-    </div>
+                        <div className="bg-white shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
+                            <div className="p-6">
+                                <h2 className="text-2xl font-bold mb-2">Projects</h2>
+                                <p className="text-gray-700 mb-4">
+                                    I've been trying to build a project every week. Here are some of them.
+                                </p>
+                                <div className="flex items-center justify-between">
+                                    <p className="text-gray-600 text-sm">November 3, 2024</p>
+                                    <p className="text-gray-600 text-sm">Kartik Doda</p>
+                                </div>
+                            </div>
+                        </div>
                     </Link>
-<Link href="/blogs">
-    <div className="bg-white shadow-md rounded-lg hover:shadow-lg transition duration-200  cursor-pointer">
-      <div className="p-6">
-        <h2 className="text-2xl font-bold mb-2">I write</h2>
-        <p className="text-gray-700 mb-4">
-        I write about things I study, generally Web3, FullStack, Entreprenurship Etc...
-        </p>
-        <div className="flex items-center justify-between">
-          <p className="text-gray-600 text-sm">November 3, 2024 · 4 min</p>
-          <p className="text-gray-600 text-sm">Kartik Doda</p>
-        </div>
-      </div>
-    </div>
-</Link>
+                    <Link href="/blogs">
+                        <div className="bg-white shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
+                            <div className="p-6">
+                                <h2 className="text-2xl font-bold mb-2">I write</h2>
+                                <p className="text-gray-700 mb-4">
+                                    I write about things I study, generally Web3, FullStack, Entrepreneurship, etc...
+                                </p>
+                                <div className="flex items-center justify-between">
+                                    <p className="text-gray-600 text-sm">November 3, 2024 · 4 min</p>
+                                    <p className="text-gray-600 text-sm">Kartik Doda</p>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
                 </div>
             </main>
         </div>

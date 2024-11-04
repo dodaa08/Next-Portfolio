@@ -16,7 +16,7 @@ function Landing() {
             {/* Header Section */}
             <header className='flex-grow'>
                 <div className='flex items-center py-4 px-10'>
-                    <h1 className='text-2xl'>Kartikdoda.tech</h1>
+                    <h1 className='text-2xl'>kartikdoda.tech</h1>
                     <button onClick={toggleDarkMode}>
                         <Moon className='hover:scale-125 ml-5 transition duration-200 cursor-pointer' />
                     </button>
@@ -72,14 +72,14 @@ function Landing() {
             </div>
 
             {/* Footer Section */}
-            <footer className='flex justify-evenly cursor-pointer py-3 mb-4'>
+            <footer className='flex justify-evenly cursor-pointer py-3 mb-10'>
                 <button>
                     <Link href="/cat">
-                        <h1 className='text-xl hover:scale-110 transition duration-200 mr-4'>Categories</h1>
+                        <h1 className='text-xl hover:scale-110 transition duration-200 mr-4 hover:underline'>Categories</h1>
                     </Link>
                 </button>
                 <button>
-                    <h1 className='text-xl hover:scale-110 transition duration-200'>Contact</h1>
+                    <h1 className='text-xl hover:scale-110 transition duration-200 hover:underline'>Contact</h1>
                 </button>
             </footer>
         </div>

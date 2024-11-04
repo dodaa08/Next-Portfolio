@@ -19,10 +19,8 @@ export default function Page() {
 
     return (
         <>
-            {/* Main Container with Dark Mode classes */}
             <div className={`${darkmode ? 'bg-black text-white' : 'bg-white text-black'} h-max w-screen flex flex-col`}>
                 
-                {/* Header Section */}
                 <header className='flex items-center py-4 px-10'>
                     <h1 className='text-2xl'>kartikdoda.tech</h1>
                     <button onClick={toggleDarkMode} className="ml-5">
@@ -30,12 +28,10 @@ export default function Page() {
                     </button>
                 </header>
 
-                {/* Content Section */}
                 <div className='flex flex-col justify-center items-center mt-10'>
                     
-                    {/* Project Card */}
-                    <div className='  shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10'>
-                            <h1 className='text-xl text-center mb-4'>Quick Gigs</h1>
+                    <div className='shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10'>
+                        <h1 className='text-xl text-center mb-4'>Quick Gigs</h1>
                         <div className='flex justify-center mb-6'>
                             <Image src={quickgigs} alt="Quick Gigs" className="h-40 w-auto" />
                         </div>
@@ -54,14 +50,14 @@ export default function Page() {
                         </div>
                     </div>
 
-                    <div className=' shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10'>
-                            <h1 className='text-xl text-center mb-4'>Skill Seva</h1>
+                    <div className='shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10'>
+                        <h1 className='text-xl text-center mb-4'>Skill Seva</h1>
                         <div className='flex justify-center mb-6'>
-                            <Image src={skillseva} alt="Quick Gigs" className="h-40 w-auto" />
+                            <Image src={skillseva} alt="Skill Seva" className="h-40 w-auto" />
                         </div>
                         <div className='text-center'>
                             <p className='text-lg text-gray-600 mb-6'>
-                                An end to end freelancing platform, Built using Next.JS, TypeScript, Supanbase, Clerk, Stripe.
+                                An end to end freelancing platform, Built using Next.JS, TypeScript, Supabase, Clerk, Stripe.
                                 It's Ready and fully functional, Both the ends are connected with payment integration.
                             </p>
                         </div>
@@ -75,15 +71,14 @@ export default function Page() {
                         </div>
                     </div>
 
-
-                    <div className=' shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10'>
-                            <h1 className='text-xl text-center mb-4'>Dholo</h1>
+                    <div className='shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10'>
+                        <h1 className='text-xl text-center mb-4'>Dholo</h1>
                         <div className='flex justify-center mb-6'>
-                            <Image src={dholo} alt="Quick Gigs" className="h-40 w-auto" />
+                            <Image src={dholo} alt="Dholo" className="h-40 w-auto" />
                         </div>
                         <div className='text-center'>
                             <p className='text-lg text-gray-600 mb-6'>
-                                An Android App built using java, XML, Firebase. It's a Laundry Managemene app where users can book a laundry service, track their order, and get tokens online.
+                                An Android App built using Java, XML, Firebase. It's a Laundry Management app where users can book a laundry service, track their order, and get tokens online.
                             </p>
                         </div>
                         <div className='flex justify-around mt-4'>
@@ -101,3 +96,4 @@ export default function Page() {
         </>
     );
 }
+

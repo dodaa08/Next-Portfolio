@@ -12,42 +12,9 @@ function Landing() {
     };
 
     return (
-        <div className={`${darkmode ? 'bg-black text-white' : 'text-black bg-white'} h-screen w-screen flex flex-col`}>
-            {/* Header Section */}
-            <header className='flex-grow '>
-                <div className='flex items-center py-4 px-10 justify-between'>
-
-                    <div className='flex'>
-
-                    <h1 className='text-2xl'>kartikdoda.tech</h1>
-                    <button onClick={toggleDarkMode}>
-                        <Moon className='hover:scale-125 ml-5 transition duration-200 cursor-pointer' />
-                    </button>
-                   
-                    </div>
-
-                   <div className=' flex space-x-12'>
-
-                    <button>
-                    <Link href="/cat">
-                        <h1 className='text-xl hover:scale-110 transition duration-200 mr-4 hover:underline '>Categories</h1>
-                    </Link>
-                </button>
-                <button>
-                    <h1 className='text-xl hover:scale-110 transition duration-200 hover:underline '>Contact</h1>
-                </button>
-                
-                   </div>
-
-
-
-                </div>
-
-            </header>
-
-            {/* Main Content Section */}
-            <main className='flex-grow flex-col justify-center items-center'>
-                <ul className='text-center'>
+        <div className={`h-screen w-screen flex flex-col items-center justify-center space-y-20`}>
+            <main className=' flex flex-col items-center justify-center text-center space-y-4'>
+                <ul>
                     <li>
                         <p className='text-xl font-mono'>Hi, I am Kartik</p>
                         <p className='text-xl font-mono'>I am a FullStack Web3 Developer from India.</p>
@@ -60,17 +27,16 @@ function Landing() {
                         <p>
                             Generally, I work with Next.js, TS/JS, React, TailwindCSS, Solidity, Rust, and Java. <br /> I&apos;m more into Web3 Development and have been working on building a Decentralized Marketplace using Solidity Contracts.
                         </p>
-
                         <br />
                         <ul>
-                           
                             <li>
-                                I also play Sports:<p className='text-blue-500 hover:text-blue-800 cursor-pointer'>Soon!</p>
+                                I also play Sports: <p className='text-blue-500 hover:text-blue-800 cursor-pointer'>Soon!</p>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </main>
+            
 
             {/* Social Media Icons Section */}
             <div className="flex justify-center p-5 gap-6 mb-5">
@@ -89,6 +55,7 @@ function Landing() {
                 <Link href="https://www.youtube.com/@Kartik_Doda" target="_blank" rel="noopener noreferrer">
                     <Youtube className='hover:scale-110 transition duration-200 cursor-pointer' />
                 </Link>
+
                 <Link href="https://www.youtube.com/@Kartik_Doda" target="_blank" rel="noopener noreferrer">
                     <FileUser className='hover:scale-110 transition duration-200 cursor-pointer' />
                 </Link>

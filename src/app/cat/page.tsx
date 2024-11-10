@@ -11,14 +11,9 @@ export default function Page() {
     };
 
     return (
-        <div className={`${darkmode ? 'bg-black text-white' : 'bg-white text-black'} h-screen w-screen flex flex-col`}>
+        <div className={` h-screen w-screen flex flex-col`}>
             {/* Header Section */}
-            <header className='flex items-center py-4 px-10'>
-                <h1 className='text-2xl'>kartikdoda.tech</h1>
-                <button onClick={toggleDarkMode} className="ml-5">
-                    <Moon className='hover:scale-125 transition duration-200 cursor-pointer' />
-                </button>
-            </header>
+           
 
             {/* Main Content */}
             <main className='flex-grow flex flex-col items-center'>
@@ -39,7 +34,7 @@ export default function Page() {
                             </div>
                         </div>
                     </Link>
-                    <Link href="">
+                    <Link href="/blogs">
                         <div className=" shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
                             <div className="p-6">
                                 <h2 className="text-2xl font-bold mb-2">I write</h2>

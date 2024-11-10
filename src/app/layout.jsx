@@ -35,7 +35,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
-      <div className={`${darkmode ? 'bg-black text-white' : 'bg-white text-black'} h-screen w-full flex flex-col flex-grow h-auto`}>
+      <div className={`${darkmode ? 'bg-black text-white' : 'bg-white text-black'} h-auto  flex flex-col flex-grow`}
+      >
           {/* Header Section */}
           <header className='flex-grow '>
                 <div className='flex items-center py-4 px-10 justify-between'>

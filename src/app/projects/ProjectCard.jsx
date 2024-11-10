@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 function ProjectCard({ title, imageSrc, description, previewLink, githubLink }) {
     return (
-        <div className='h-max shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10'>
+        <div className='h-auto shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10'>
             <h1 className='text-xl text-center mb-4'>{title}</h1>
             <div className='flex justify-center mb-6'>
                 <Image src={imageSrc} alt={title} className="h-40 w-auto" />

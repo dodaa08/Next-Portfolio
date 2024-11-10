@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <title>Create Next App</title>
+        <title>kartikdoda.tech</title>
         <meta name="kartikdoda.tech" content="Portfolio" />
       </Head>
       <body

@@ -7,7 +7,6 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from "next/link";
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -35,37 +34,36 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
-      <div className={`${darkmode ? 'bg-black text-white' : 'bg-white text-black'} h-auto  flex flex-col flex-grow`}
-      >
+        <div className={`${darkmode ? 'bg-black text-white' : 'bg-white text-black'} h-auto flex flex-col flex-grow`}
+        >
           {/* Header Section */}
-          <header className='flex-grow '>
-                <div className='flex items-center py-4 px-10 justify-between'>
+          <header className='flex-grow'>
+            <div className='flex items-center py-4 px-4 md:px-10 justify-between'>
 
-                    <div className='flex'>
+              <div className='flex items-center'>
+                <h1 className='text-xl md:text-2xl'>kartikdoda.tech</h1>
+                <button onClick={toggleDarkMode}>
+                  <Moon className='hover:scale-125 ml-3 md:ml-5 transition duration-200 cursor-pointer' />
+                </button>
+              </div>
 
-                    <h1 className='text-2xl'>kartikdoda.tech</h1>
-                    <button onClick={toggleDarkMode}>
-                        <Moon className='hover:scale-125 ml-5 transition duration-200 cursor-pointer' />
-                    </button>
-                   
-                    </div>
-
-                   <div className=' flex space-x-12'>
-
-                    <button>
-                    <Link href="/cat">
-                        <h1 className='text-xl hover:scale-110 transition duration-200 mr-4 hover:underline '>Categories</h1>
-                    </Link>
+              <div className='flex space-x-6 md:space-x-12'>
+                <button>
+                  <Link href="/cat">
+                    <h1 className='text-lg md:text-xl hover:scale-110 transition duration-200 hover:underline'>Categories</h1>
+                  </Link>
                 </button>
                 <button>
-                    <h1 className='text-xl hover:scale-110 transition duration-200 hover:underline '>Contact</h1>
+                  <h1 className='text-lg md:text-xl hover:scale-110 transition duration-200 hover:underline'>Contact</h1>
                 </button>
-                   </div>
-                </div>
-        </header>
+              </div>
+            </div>
+          </header>
+
           {children}
-          <footer className="flex justify-center">
-            <h1>2024 @kartikdoda.tech</h1>
+
+          <footer className="flex mt-10 justify-center">
+            <h1 className="text-sm md:text-base">2024 @kartikdoda.tech</h1>
           </footer>
         </div>
       </body>

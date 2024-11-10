@@ -16,8 +16,9 @@ function Page() {
               <h1 className='text-xl py-3 text-center'>Blockchain</h1>
             </div>
             <div className='bg-gray-300 text-black py-3 px-4 rounded-xl cursor-pointer hover:bg-gray-400'>
-              <h1 className='text-xl py-3 text-center'>Let's Build Projects Using AI</h1>
-            </div>
+  <h1 className='text-xl py-3 text-center'>Let&apos;s Build Projects Using AI</h1>
+</div>
+
             <div className='bg-gray-300 text-black py-3 px-4 rounded-xl cursor-pointer hover:bg-gray-400'>
               <h1 className='text-xl py-3 text-center'>Add Authentication to your projects</h1>
             </div>

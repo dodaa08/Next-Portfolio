@@ -37,7 +37,7 @@ export default function Page() {
                         </div>
                         <div className='text-center'>
                             <p className='text-lg text-gray-600 mb-6'>
-                                A Decentralized Market Place, where users can come and post any sort of work. The Solidity contracts will automate the Payment (in crypto for now) once verified from both ends.
+                                A Decentralized Market Place, For Gig workers/ Freelancers. The Solidity contracts will automate the Payment (in crypto for now) once the work is verified from both ends.
                             </p>
                         </div>
                         <div className='flex justify-around mt-4'>

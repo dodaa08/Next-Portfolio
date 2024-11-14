@@ -11,17 +11,11 @@ export default function Page() {
     };
 
     return (
-        <div className={` h-screen w-screen flex flex-col`}>
-            {/* Header Section */}
-           
-
-            {/* Main Content */}
+        <div className={`h-screen w-screen flex flex-col`}>
             <main className='flex-grow flex flex-col items-center'>
-                <h1 className="text-2xl cursor-pointer hover:scale-110 transition duration-200">Categories</h1>
-
-                <div className="flex justify-between gap-4 mt-8  mt-20">
+                <div className="flex justify-between gap-4 mt-10">
                     <Link href="/projects">
-                        <div className=" shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
+                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
                             <div className="p-6">
                                 <h2 className="text-2xl font-bold mb-2">Projects</h2>
                                 <p className="text-gray-700 mb-4">
@@ -35,7 +29,7 @@ export default function Page() {
                         </div>
                     </Link>
                     <Link href="/blogs">
-                        <div className=" shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
+                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
                             <div className="p-6">
                                 <h2 className="text-2xl font-bold mb-2">I write</h2>
                                 <p className="text-gray-700 mb-4">
@@ -43,6 +37,22 @@ export default function Page() {
                                 </p>
                                 <div className="flex items-center justify-between">
                                     <p className="text-gray-600 text-sm">November 3, 2024</p>
+                                    <p className="text-gray-600 text-sm">Kartik Doda</p>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+                <div className="flex justify-between gap-4 mt-10">
+                    <Link href="">
+                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
+                            <div className="p-6">
+                                <h2 className="text-2xl font-bold mb-2">Achieve</h2>
+                                <p className="text-gray-700 mb-4">
+                                    Set of goals which I&apos;ve achieved and want to achieve.
+                                </p>
+                                <div className="flex items-center justify-between">
+                                    <p className="text-gray-600 text-sm">November 14, 2024</p>
                                     <p className="text-gray-600 text-sm">Kartik Doda</p>
                                 </div>
                             </div>

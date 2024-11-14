@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         >
           {/* Header Section */}
           <header className='flex-grow'>
-            <div className='flex items-center py-4 px-4 md:px-10 justify-between'>
+            <div className='flex items-center py-4 px-4 md:px-10 justify-evenly border-b border-gray-900 font-mono'>
 
               <div className='flex items-center'>
                 <h1 className='text-xl md:text-2xl'>kartikdoda.tech</h1>

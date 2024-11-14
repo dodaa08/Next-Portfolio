@@ -45,7 +45,7 @@ function Landing() {
                     <Twitter className='hover:scale-110 transition duration-200 cursor-pointer' />
                 </Link>
 
-                <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.linkedin.com/in/kartikd4152g/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className='hover:scale-110 transition duration-200 cursor-pointer' />
                 </Link>
 

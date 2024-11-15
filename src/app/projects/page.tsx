@@ -23,6 +23,7 @@ export default function Page() {
                     previewLink=""
                     githubLink="https://github.com/dodaa08/SpamurAI"
                     techStack={["React.js", "Node.js", "MongoDB", "Hugging Face", "Move"]}
+                    status={"In Progress"}
                 />
 
                 <ProjectCard
@@ -32,6 +33,7 @@ export default function Page() {
                     previewLink="https://x.com/kartik___doda/status/1850478191934394825"
                     githubLink="https://github.com/dodaa08/Quick-gigs"
                     techStack={["Next.js", "Supabase", "Solidity", "Tailwind"]}
+                    status={"Done"}
                 />
 
                 <ProjectCard
@@ -41,6 +43,7 @@ export default function Page() {
                     previewLink="https://x.com/kartik___doda/status/1832169622386233410"
                     githubLink="https://github.com/dodaa08/SkillSeva-"
                     techStack={["Next.js", "Supabase", "Stripe", "Tailwind"]}
+                    status={"Done"}
                 />
             </div>
             <div className='flex justify-evenly'>
@@ -51,6 +54,7 @@ export default function Page() {
                     previewLink=""
                     githubLink="https://github.com/dodaa08/Supply-chain-optimization"
                     techStack={["Python", "Streamlit", "Pandas", "Numpy"]}
+                    status={"Done"}
                 />
                 <ProjectCard
                     title="Dholo"
@@ -59,6 +63,7 @@ export default function Page() {
                     previewLink="https://dholoapp.netlify.app/"
                     githubLink="https://github.com/dodaa08/DholoApp"
                     techStack={["Java", "XML", "Firebase"]}
+                    status={"Done"}
                 />
                 <ProjectCard
                     title="Crypto Wallet"
@@ -67,6 +72,7 @@ export default function Page() {
                     previewLink=""
                     githubLink="https://github.com/dodaa08/CryptoWallet"
                     techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind"]}
+                    status={"Done"}
                 />
             </div>
         </main>

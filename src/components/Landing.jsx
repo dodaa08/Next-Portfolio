@@ -12,19 +12,19 @@ function Landing() {
     };
 
     return (
-        <div className={`h-screen w-screen flex flex-col items-center justify-center space-y-20`}>
+        <div className={`h-screen w-screen flex flex-col items-center justify-center space-y-10 p-5 md:space-y-20`}>
             <main className='flex flex-col items-center justify-center text-center'>
-                <ul>
-                    <li className=''>
-                        <p className='text-xl font-mono'>Hi, I am Kartik</p>
-                        <p className='text-xl font-mono'>I am a FullStack Web3 Developer..</p>
-                        <p className='text-xl font-mono'>I&apos;ve worked with various projects in both Web and Android Development.</p>
-                        <p className='text-xl font-mono'>Tech Stacks I generally work with:- <br />Next, React, Tailwind, Node.js, MongoDB, SQL, Java-xml, Solidity.</p>
+                <ul className='space-y-5 md:space-y-3'>
+                    <li>
+                        <p className='text-base md:text-xl font-mono'>Hi, I am Kartik</p>
+                        <p className='text-base md:text-xl font-mono'>I am a FullStack Web3 Developer..</p>
+                        <p className='text-base md:text-xl font-mono'>I&apos;ve worked with various projects in both Web and Android Development.</p>
+                        <p className='text-base md:text-xl font-mono'>Tech Stacks I generally work with: <br />Next, React, Tailwind, Node.js, MongoDB, SQL, Java-xml, Solidity.</p>
                     </li>
                     <li className='mt-2'>
                         <br />
-                        <p className='text-xl font-mono'> 
-                          Building Spamurai, an AI cold Email Writer and Sender with data stored on Aptos blockchain.
+                        <p className='text-base md:text-xl font-mono'>
+                            Building Spamurai, an AI cold Email Writer and Sender with data stored on Aptos blockchain.
                         </p>
                         <br />
                         <ul>
@@ -36,25 +36,25 @@ function Landing() {
                 </ul>
             </main>
             
-            <div className="flex justify-center p-5 gap-6 mb-5">
+            <div className="flex flex-wrap justify-center p-5 gap-4 md:gap-6 mb-5">
                 <Link href="https://github.com/dodaa08" target="_blank" rel="noopener noreferrer">
-                    <Github className='hover:scale-110 transition duration-200 cursor-pointer' />
+                    <Github className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
                 </Link>
 
                 <Link href="https://x.com/kartik___doda" target="_blank" rel="noopener noreferrer">
-                    <Twitter className='hover:scale-110 transition duration-200 cursor-pointer' />
+                    <Twitter className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
                 </Link>
 
                 <Link href="https://www.linkedin.com/in/kartikd4152g/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className='hover:scale-110 transition duration-200 cursor-pointer' />
+                    <Linkedin className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
                 </Link>
 
                 <Link href="https://www.youtube.com/@Kartik_Doda" target="_blank" rel="noopener noreferrer">
-                    <Youtube className='hover:scale-110 transition duration-200 cursor-pointer' />
+                    <Youtube className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
                 </Link>
 
                 <Link href="https://www.youtube.com/@Kartik_Doda" target="_blank" rel="noopener noreferrer">
-                    <FileUser className='hover:scale-110 transition duration-200 cursor-pointer' />
+                    <FileUser className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
                 </Link>
             </div>
         </div>

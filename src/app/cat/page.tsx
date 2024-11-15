@@ -13,9 +13,11 @@ export default function Page() {
     return (
         <div className={`h-screen w-screen flex flex-col`}>
             <main className='flex-grow flex flex-col items-center'>
-                <div className="flex justify-between gap-4 mt-10">
+                {/* Container for the cards */}
+                <div className="flex flex-col md:flex-row gap-4 mt-10">
+                    {/* Project Card */}
                     <Link href="/projects">
-                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
+                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer w-full md:w-1/2">
                             <div className="p-6">
                                 <h2 className="text-2xl font-bold mb-2">Projects</h2>
                                 <p className="text-gray-700 mb-4">
@@ -28,8 +30,10 @@ export default function Page() {
                             </div>
                         </div>
                     </Link>
+
+                    {/* Blog Card */}
                     <Link href="/blogs">
-                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
+                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer w-full md:w-1/2">
                             <div className="p-6">
                                 <h2 className="text-2xl font-bold mb-2">I write</h2>
                                 <p className="text-gray-700 mb-4">
@@ -43,9 +47,11 @@ export default function Page() {
                         </div>
                     </Link>
                 </div>
+
+                {/* Achieve Card */}
                 <div className="flex justify-between gap-4 mt-10">
                     <Link href="">
-                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer">
+                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer w-full md:w-1/2">
                             <div className="p-6">
                                 <h2 className="text-2xl font-bold mb-2">Achieve</h2>
                                 <p className="text-gray-700 mb-4">

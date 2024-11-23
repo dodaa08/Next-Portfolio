@@ -1,11 +1,9 @@
 "use client";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "../components/header";
-import { Moon } from 'lucide-react';
-import React, { useState } from 'react';
-import Head from 'next/head';
-import Link from "next/link";
+import Header from "../components/header"; // Import the Header component
+import React, { useState } from "react";
+import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,41 +26,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <title>kartikdoda.tech</title>
-        <meta name="kartikdoda.tech" content="Portfolio" />
+        <title>Kartik Doda | Portfolio</title>
+        <meta name="description" content="Kartik Doda's Portfolio" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
-      >
-        <div className={`${darkmode ? 'bg-black text-white' : 'bg-white text-black'} h-auto flex flex-col flex-grow`}
-        >
+      <body className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden overflow-y-auto h-auto m-0 p-0`}>
+        <div className={`${darkmode ? 'bg-white text-black' : ' bg-black/95 text-white'} flex flex-col min-h-screen`}>
           {/* Header Section */}
-          <header className='flex-grow'>
-            <div className='flex items-center py-4 px-4 md:px-10 justify-evenly border-b border-gray-900 font-mono'>
+          <Header darkmode={darkmode} toggleDarkMode={toggleDarkMode} />
 
-              <div className='flex items-center'>
-                <h1 className='text-xl md:text-2xl'>kartikdoda.tech</h1>
-                <button onClick={toggleDarkMode}>
-                  <Moon className='hover:scale-125 ml-3 md:ml-5 transition duration-200 cursor-pointer' />
-                </button>
-              </div>
+          {/* Main Content */}
+          <main className="flex-grow">
+            {children}
+          </main>
 
-              <div className='flex space-x-6 md:space-x-12'>
-                <button>
-                  <Link href="/cat">
-                    <h1 className='text-lg md:text-xl hover:scale-110 transition duration-200 hover:underline'>Categories</h1>
-                  </Link>
-                </button>
-                <button>
-                  <h1 className='text-lg md:text-xl hover:scale-110 transition duration-200 hover:underline'>Contact</h1>
-                </button>
-              </div>
-            </div>
-          </header>
-
-          {children}
-
-          <footer className="flex mt-10 justify-center">
+          {/* Footer */}
+          <footer className="flex justify-center mt-auto py-4">
             <h1 className="text-sm md:text-base">2024 @kartikdoda.tech</h1>
           </footer>
         </div>

@@ -14,8 +14,9 @@ import wallet from "../../imgs/wallet.jpg";
 
 export default function Page() {
     return (
-        <main className="justify-center items-center space-y-8">
-            <div className='flex justify-evenly mt-10'>
+        <main className="flex flex-col items-center space-y-8 px-4 py-10">
+            {/* First row of project cards */}
+            <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
                 <ProjectCard
                     title="Spamurai"
                     imageSrc={spamurai}
@@ -23,9 +24,8 @@ export default function Page() {
                     previewLink=""
                     githubLink="https://github.com/dodaa08/SpamurAI"
                     techStack={["React.js", "Node.js", "MongoDB", "Hugging Face", "Move"]}
-                    status={"In Progress"}
+                    status="In Progress"
                 />
-
                 <ProjectCard
                     title="SkillSeva"
                     imageSrc={gig}
@@ -33,9 +33,8 @@ export default function Page() {
                     previewLink="https://x.com/kartik___doda/status/1850478191934394825"
                     githubLink="https://github.com/dodaa08/Quick-gigs"
                     techStack={["Next.js", "Supabase", "Solidity", "Tailwind"]}
-                    status={"Done"}
+                    status="Done"
                 />
-
                 <ProjectCard
                     title=""
                     imageSrc={sih}
@@ -43,10 +42,11 @@ export default function Page() {
                     previewLink="https://x.com/kartik___doda/status/1832169622386233410"
                     githubLink="https://github.com/dodaa08/SkillSeva-"
                     techStack={["Next.js", "Supabase", "Stripe", "Tailwind"]}
-                    status={"Done"}
+                    status="Done"
                 />
             </div>
-            <div className='flex justify-evenly'>
+            {/* Second row of project cards */}
+            <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
                 <ProjectCard
                     title="Broken Supply Chains"
                     imageSrc={sp}
@@ -54,7 +54,7 @@ export default function Page() {
                     previewLink=""
                     githubLink="https://github.com/dodaa08/Supply-chain-optimization"
                     techStack={["Python", "Streamlit", "Pandas", "Numpy"]}
-                    status={"Done"}
+                    status="Done"
                 />
                 <ProjectCard
                     title="Dholo"
@@ -63,7 +63,7 @@ export default function Page() {
                     previewLink="https://dholoapp.netlify.app/"
                     githubLink="https://github.com/dodaa08/DholoApp"
                     techStack={["Java", "XML", "Firebase"]}
-                    status={"Done"}
+                    status="Done"
                 />
                 <ProjectCard
                     title="Crypto Wallet"
@@ -72,9 +72,9 @@ export default function Page() {
                     previewLink=""
                     githubLink="https://github.com/dodaa08/CryptoWallet"
                     techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind"]}
-                    status={"Done"}
+                    status="Done"
                 />
             </div>
         </main>
-     );
-    }
+    );
+}

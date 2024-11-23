@@ -1,61 +1,47 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Github, Moon, Twitter, Linkedin, Youtube, FileUser } from 'lucide-react';
-import Link from 'next/link';
-
+import React, { useState } from "react";
+import Link from "next/link";
+import { Github } from 'lucide-react';
+import { Twitter } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
+import { Youtube } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 function Landing() {
-    const [darkmode, setDarkmode] = useState(false);
-
-    const toggleDarkMode = () => {
-        setDarkmode(!darkmode);
-    };
-
+    
     return (
-        <div className={`h-screen w-screen flex flex-col items-center justify-center space-y-10 p-5 md:space-y-20`}>
-            <main className='flex flex-col items-center justify-center text-center'>
-                <ul className='space-y-5 md:space-y-3'>
-                    <li>
-                        <p className='text-base md:text-xl font-mono'>Hi, I am Kartik</p>
-                        <p className='text-base md:text-xl font-mono'>I am a FullStack Web3 Developer..</p>
-                        <p className='text-base md:text-xl font-mono'>I&apos;ve worked with various projects in both Web and Android Development.</p>
-                        <p className='text-base md:text-xl font-mono'>Tech Stacks I generally work with: <br />Next, React, Tailwind, Node.js, MongoDB, SQL, Java-xml, Solidity.</p>
-                    </li>
-                    <li className='mt-2'>
-                        <br />
-                        <p className='text-base md:text-xl font-mono'>
-                            Building Spamurai, an AI cold Email Writer and Sender with data stored on Aptos blockchain.
-                        </p>
-                        <br />
-                        <ul>
-                            <li>
-                                I also play Sports: <p className='text-blue-500 hover:text-blue-800 cursor-pointer'>Soon!</p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </main>
-            
-            <div className="flex flex-wrap justify-center p-5 gap-4 md:gap-6 mb-5">
-                <Link href="https://github.com/dodaa08" target="_blank" rel="noopener noreferrer">
-                    <Github className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
-                </Link>
+        <div className={`h-max translate-y-[-20%]`}>
+            {/* Container for content */}
+            <div className="flex flex-col items-center justify-center space-y-8 ">
+                {/* Section 1 */}
+                <div className="text-left translate-x-[-190%]">
+                    <h1 className="text-xl font-mono">Hi, I am Kartik</h1>
+                </div>
 
-                <Link href="https://x.com/kartik___doda" target="_blank" rel="noopener noreferrer">
-                    <Twitter className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
-                </Link>
-
-                <Link href="https://www.linkedin.com/in/kartikd4152g/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
-                </Link>
-
-                <Link href="https://www.youtube.com/@Kartik_Doda" target="_blank" rel="noopener noreferrer">
-                    <Youtube className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
-                </Link>
-
-                <Link href="https://www.youtube.com/@Kartik_Doda" target="_blank" rel="noopener noreferrer">
-                    <FileUser className='w-6 h-6 md:w-8 md:h-8 hover:scale-110 transition duration-200 cursor-pointer' />
-                </Link>
+                {/* Section 2 */}
+                <div className="text-left space-y-1 translate-x-[-3%]">
+                    <h1 className="text-xl">I am a Fullstack Web3 Developer, I've been building a lot of products since past 1 year.</h1>
+                    <h1 className="text-xl">I've built projects like A Freelancing platform with automated Payment in POL(Crypto)</h1>
+                    <h1 className="text-xl">An AI Email Writer and Sender, Send Emails one click, Building more cool stuff.</h1>
+                    <h1 className="text-xl">I am open to freelance work.</h1>
+                </div>
+                <div className="text-left flex  space-x-5 translate-x-[-150%]">
+                    <Link href="">
+                    <Github />
+                    </Link>
+                    <Link href="">
+                    <Twitter />
+                    </Link>
+                    <Link href="">
+                    <Linkedin />
+                    </Link>
+                    <Link href="">
+                       <Youtube />
+                    </Link>
+                    <Link href="">
+                    <Instagram />
+                    </Link>
+                </div>
             </div>
         </div>
     );

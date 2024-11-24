@@ -2,55 +2,55 @@
 
 import React from "react";
 import Link from "next/link";
-import { Github } from 'lucide-react';
-import { Twitter } from 'lucide-react';
-import { Linkedin } from 'lucide-react';
-import { Youtube } from 'lucide-react';
-import { Instagram } from 'lucide-react';
-import { File } from 'lucide-react';
+import { Github, Twitter, Linkedin, Youtube, Instagram, File } from "lucide-react";
 
 function Landing() {
     return (
-        <div className={`h-max translate-y-[-20%]`}>
-            {/* Container for content */}
-            <div className="flex flex-col items-center justify-center space-y-8">
-                {/* Section 1 */}
-                <div className="text-left translate-x-[-190%]">
-                    <h1 className="text-xl font-mono">Hi, I am Kartik</h1>
+        <div className="min-h-screen flex flex-col justify-center items-center px-4 md:px-16 lg:px-24 translate-y-[-4%]">
+            <div className="w-full max-w-3xl space-y-10">
+                {/* Introduction Section */}
+                <div className="space-y-4 text-left">
+                    <h1 className="text-3xl font-mono font-bold">Hi, I am Kartik</h1>
+                    <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                        I am a Fullstack Web3 developer. I build web applications and smart contracts using Ethereum and other blockchain technologies.
+                    </p>
+                    <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                        I enjoy contributing to open-source projects and collaborating with like-minded individuals to create meaningful solutions.
+                    </p>
+                    <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                        I am currently learning Solana Development and I am open to Freelance work.
+                    </p>
                 </div>
 
-                {/* Section 2 */}
-                <div className="text-left space-y-1 translate-x-[-3%]">
-                    <h1 className="text-xl">
-                        I am a Fullstack Web3 Developer, I&apos;ve been building a lot of products since past 1 year.
-                    </h1>
-                    <h1 className="text-xl">
-                        I&apos;ve built projects like A Freelancing platform with automated Payment in POL(Crypto)
-                    </h1>
-                    <h1 className="text-xl">
-                        An AI Email Writer and Sender, Send Emails one click, Building more cool stuff.
-                    </h1>
-                    <h1 className="text-xl">I am open to freelance work.</h1>
-                </div>
-                <div className="text-left flex space-x-5 translate-x-[-118%]">
-                    <Link href="https://github.com/dodaa08">
-                        <Github />
-                    </Link>
-                    <Link href="https://x.com/kartik___doda">
-                        <Twitter />
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/kartikd4152g/">
-                        <Linkedin />
-                    </Link>
-                    <Link href="https://www.youtube.com/@Kartik_Doda">
-                        <Youtube />
-                    </Link>
-                    <Link href="https://www.instagram.com/kartik__doda/?next=%2F">
-                        <Instagram />
-                    </Link>
-                    <Link href="">
-                        <File />
-                    </Link>
+                {/* Social Links Section */}
+                <div className="space-y-4">
+                    <h2 className="text-xl font-semibold">Connect with me:</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <Link href="https://github.com/dodaa08" className="flex items-center gap-2">
+                            <Github />
+                            <span>@dodaa08</span>
+                        </Link>
+                        <Link href="https://x.com/kartik___doda" className="flex items-center gap-2">
+                            <Twitter />
+                            <span>@kartik___doda</span>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/kartikd4152g/" className="flex items-center gap-2">
+                            <Linkedin />
+                            <span>@Kartik Doda</span>
+                        </Link>
+                        <Link href="https://www.youtube.com/@Kartik_Doda" className="flex items-center gap-2">
+                            <Youtube />
+                            <span>@kartik__doda</span>
+                        </Link>
+                        <Link href="https://www.instagram.com/kartik__doda/" className="flex items-center gap-2">
+                            <Instagram />
+                            <span>@kartik__doda</span>
+                        </Link>
+                        <Link href="#" className="flex items-center gap-2">
+                            <File />
+                            <span>Resume</span>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

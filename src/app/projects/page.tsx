@@ -36,7 +36,7 @@ export default function Page() {
                     status="Done"
                 />
                 <ProjectCard
-                    title=""
+                    title="A FreeLancing Platform"
                     imageSrc={sih}
                     description="A Freelancing platform, Empowring the Employbility in India."
                     previewLink="https://x.com/kartik___doda/status/1832169622386233410"
@@ -46,7 +46,7 @@ export default function Page() {
                 />
             </div>
             {/* Second row of project cards */}
-            <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
+            <div className='flex flex-col md:flex-row justify-center gap-8'>
                 <ProjectCard
                     title="Broken Supply Chains"
                     imageSrc={sp}
@@ -69,7 +69,7 @@ export default function Page() {
                     title="Crypto Wallet"
                     imageSrc={wallet}
                     description="Working on making the UX easy for onboarding users."
-                    previewLink=""
+                    previewLink="https://store-crypto.vercel.app/"
                     githubLink="https://github.com/dodaa08/CryptoWallet"
                     techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind"]}
                     status="Done"

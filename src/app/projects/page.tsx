@@ -24,14 +24,14 @@ export default function Page() {
             {/* First row of project cards */}
             <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
             <ProjectCard
-          title="SkillSeva"
-          imageSrc={gig} // Replace with your image path
-          description="A Decentralized freelancing platform."
-          previewLink="https://example.com"
-          githubLink="https://github.com/example"
-          techStack={["Next.js", "Supabase", "Solidity", "Tailwind"]}
-          status="Done"
-        />
+                    title="SkillSeva"
+                    imageSrc={gig}
+                    description="A Decentralized Market Place, with automated payment Mechanism once the job is done."
+                    previewLink="https://x.com/kartik___doda/status/1850478191934394825"
+                    githubLink="https://github.com/dodaa08/Quick-gigs"
+                    techStack={["Next.js", "Supabase", "Solidity", "Tailwind"]}
+                    status="Done"
+                />
                 <ProjectCard
                     title="SellMeUp"
                     imageSrc={trading}

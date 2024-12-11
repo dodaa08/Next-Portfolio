@@ -12,7 +12,7 @@ function Landing() {
                 <div className="space-y-4 text-left">
                     <h1 className="text-3xl font-mono font-bold">Hi, I am Kartik</h1>
                     <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                        I am a Fullstack Web3 developer. I build web applications and smart contracts using Ethereum and other blockchain technologies.
+                        I am a Fullstack developer. I build web applications and smart contracts using Ethereum and other blockchain technologies.
                     </p>
                     <p className="text-base sm:text-lg md:text-xl leading-relaxed">
                         I enjoy contributing to open-source projects and collaborating with like-minded individuals to create meaningful solutions.
@@ -58,3 +58,8 @@ function Landing() {
 }
 
 export default Landing;
+
+
+// service ID : service_8rvez7k
+// template ID : template_opywhdt
+// public key

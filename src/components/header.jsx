@@ -25,20 +25,23 @@
 
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+              <button className='text-sm md:text-lg'>
             <Link href="/cat">
-              <button className='text-sm md:text-lg hover:scale-110 transition duration-200'>
-                <h1 className="">Categories</h1>
-              </button>
+                Categories
             </Link>
-            <button className='text-sm md:text-lg hover:scale-110 transition duration-200'>
-              <h1 className="text-sm md:text-lg hover:scale-110 transition duration-200">Tags</h1>
+              </button>
+
+
+              <Link href="/blogs">
+            <button className='text-sm md:text-lg'>
+              <h1 className="text-sm md:text-lg">Blogs</h1>
             </button>
-            <button className='text-sm md:text-lg hover:scale-110 transition duration-200'>
-              <h1 className="text-sm md:text-lg hover:scale-110 transition duration-200">Blogs</h1>
+              </Link>
+              <Link href="/contact">
+            <button className='text-sm md:text-lg'>
+              <h1 className="text-sm md:text-lg">Contact</h1>
             </button>
-            <button className='text-sm md:text-lg hover:scale-110 transition duration-200'>
-              <h1 className="text-sm md:text-lg hover:scale-110 transition duration-200">Send Message</h1>
-            </button>
+              </Link>
           </div>
         </div>
       </header>

@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <div className="p-4 te min-h-screen">
       <h2 className="text-2xl mb-4 text-center">Blog Posts</h2>
-      <div className="flex flex-wrap justify-center gap-4">
+      {/* <div className="flex flex-wrap justify-center gap-4">
         {blogs.map((blog, index) => (
           <div
             key={index}
@@ -26,6 +26,9 @@ export default function Page() {
             <span className="self-end md:self-center">{count++}</span>
           </div>
         ))}
+      </div> */}
+      <div className='py-40'>
+      <h1 className='text-2xl mb-4 text-center'>Yet to come..</h1>
       </div>
     </div>
   );

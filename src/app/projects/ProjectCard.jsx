@@ -1,12 +1,31 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import {  toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ProjectCard({ title, imageSrc, description, previewLink, githubLink, techStack=[], status }) {
+    
+        const generteToast = ()=>{
+            if(previewLink == ""){
+                toast.error("Project in progress, view github..", {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                  });
+            }
+
+        }
+      
+
     return (
-        <div className='h-max shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10 rounded-xl'>
+        <div className='border-b border-gray-500 h-max shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10 rounded-xl'>
             <div className='flex justify-center mb-6 border-b border-gray-300'>
                 <Image src={imageSrc} alt={title} className="h-40 w-auto rounded-xl mb-4" />
             </div>
@@ -16,7 +35,7 @@ function ProjectCard({ title, imageSrc, description, previewLink, githubLink, te
             </div>
             <div className='flex justify-around mt-4'>
                 <Link href={previewLink}>
-                    <button className='hover:scale-105 transition duration-200 hover:underline'>Preview</button>
+                    <button onClick={generteToast} className='hover:scale-105 transition duration-200 hover:underline'>Preview</button>
                 </Link>
                 <Link href={githubLink}>
                     <button className='hover:scale-105 transition duration-200 hover:underline'>Github</button>

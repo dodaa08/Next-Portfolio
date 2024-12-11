@@ -25,23 +25,26 @@
 
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-              <button className='text-sm md:text-lg'>
+             
             <Link href="/cat">
+            <button className='border-2  py-2 px-5 rounded-xl border-gray-800 hover:border-gray-600 transition duration-200 '>
                 Projects
+            </button>
             </Link>
-              </button>
-
-
-              <Link href="/blogs">
-            <button className='text-sm md:text-lg'>
-              <h1 className="text-sm md:text-lg">Blogs</h1>
+       
+       
+            <Link href="/blogs">
+            <button className='border-2  py-2 px-5 rounded-xl border-gray-800 hover:border-gray-600 transition duration-200 '>
+                Blogs
             </button>
-              </Link>
-              <Link href="/contact">
-            <button className='text-sm md:text-lg'>
-              <h1 className="text-sm md:text-lg">Contact</h1>
+            </Link>
+
+             
+            <Link href="/contact">
+            <button className='border-2  py-2 px-5 rounded-xl border-gray-800 hover:border-gray-600 transition duration-200 '>
+                Contact
             </button>
-              </Link>
+            </Link>
           </div>
         </div>
       </header>

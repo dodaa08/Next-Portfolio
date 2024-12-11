@@ -18,7 +18,7 @@ export default function Page() {
                 <div className="flex flex-col md:flex-row flex-wrap gap-8 mt-4 mx-4 md:mx-8 lg:mx-16 justify-center">
                     {/* Project Card */}
                     <Link href="/projects">
-                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer w-full md:w-3/4 lg:w-2/3">
+                        <div className="border-b border-gray-500 shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer w-full md:w-3/4 lg:w-2/3">
                             <div className="p-6 h-full flex flex-col justify-between">
                                 <h2 className="text-2xl font-bold mb-2">Projects</h2>
                                 <p className="mb-4 flex-grow">
@@ -34,7 +34,7 @@ export default function Page() {
 
                     {/* Blog Card */}
                     <Link href="/blogs">
-                        <div className="shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer w-full md:w-3/4 lg:w-2/3">
+                        <div className="border-b border-gray-500 shadow-md rounded-lg hover:shadow-lg transition duration-200 cursor-pointer w-full md:w-3/4 lg:w-2/3">
                             <div className="p-6 h-full flex flex-col justify-between">
                                 <h2 className="text-2xl font-bold mb-2">Blogs</h2>
                                 <p className="mb-4 flex-grow">

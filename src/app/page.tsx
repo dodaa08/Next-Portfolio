@@ -1,11 +1,14 @@
-"use client"; 
+// src/app/page.tsx
+
+import React from "react";
 import Landing from "../components/Landing";
 
-
-export default function Page() {
-  return(
+const Home: React.FC = () => {
+  return (
     <>
-    <Landing />
+      <Landing />
     </>
-  )
-}
+  );
+};
+
+export default Home;

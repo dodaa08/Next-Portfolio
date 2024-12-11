@@ -27,7 +27,7 @@
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
               <button className='text-sm md:text-lg'>
             <Link href="/cat">
-                Categories
+                Projects
             </Link>
               </button>
 

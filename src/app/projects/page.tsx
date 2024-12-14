@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../../components/ProjectCard';
 import quickgigs from '../../imgs/quickgigs.png';
 import skillseva from "../../imgs/project2nd.jpg";
 import dholo from "../../imgs/project3.png";

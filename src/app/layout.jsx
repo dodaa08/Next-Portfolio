@@ -1,16 +1,18 @@
 "use client";
-import localFont from "next/font/local";
+import local from "next/font/local"; // Old import style
+  // Correct import statement
 import "./globals.css";
 import Header from "../components/header"; // Import the Header component
 import React, { useState } from "react";
 import Head from "next/head";
 
-const geistSans = localFont({
+const geistSans = local({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const geistMono = localFont({
+
+const geistMono = local({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",

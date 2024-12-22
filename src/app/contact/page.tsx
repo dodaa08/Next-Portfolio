@@ -61,29 +61,32 @@ const PublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string | undefin
   
 
   return (
-    <div>
+    <div className="">
       {/* Toast container */}
       <ToastContainer />
+      <div>
+           <h1 className="text-2xl text-center py-10">Let's Talk</h1>
+      </div>
       
       <div className="flex justify-center">
         <div className="flex flex-col gap-5">
           <input
             type="text"
             placeholder="Name"
-            className="bg-black text-white rounded-xl py-3 w-72 px-2 border-gray-800 border-2"
+            className=" text-white rounded-xl py-3 w-72 px-7 border-gray-800 border-2 bg-black"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="email"
             placeholder="Email"
-            className="bg-black text-white rounded-xl py-3 w-72 px-2 border-gray-800 border-2"
+            className="bg-black text-white rounded-xl py-3 w-72 px-7 border-gray-800 border-2"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <textarea
             placeholder="Message"
-            className="bg-black text-white rounded-xl py-3 w-72 px-2 border-gray-800 border-2"
+            className="bg-black text-white rounded-xl py-3 w-72 px-7 border-gray-800 border-2"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
@@ -93,7 +96,7 @@ const PublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string | undefin
       <div className="py-9 flex justify-center">
         <button
           onClick={sendEmail}
-          className="bg-blue-400 rounded-xl py-2 px-10 font-mono hover:bg-blue-300 transition duration-200"
+          className="bg-blue-500 rounded-xl py-2 px-10 font-mono hover:bg-blue-300 transition duration-200"
         >
           Send
         </button>

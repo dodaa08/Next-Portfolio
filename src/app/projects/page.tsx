@@ -24,30 +24,31 @@ export default function Page() {
             {/* First row of project cards */}
             <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
             <ProjectCard
+                    title="Trading Engine"
+                    imageSrc={trading}
+                    description="I've built a trading Enigne, try it out, become a market maker buy and sell BTC here!"
+                    previewLink="https://tradeengine.vercel.app/"
+                    githubLink="https://github.com/dodaa08/Trading-System"
+                    techStack={["React.js", "Node.js", "MongoDB", "Express"]}
+                    status="Done"
+                />
+            <ProjectCard
                     title="SkillSeva"
                     imageSrc={gig}
-                    description="A Decentralized Market Place, with automated payment Mechanism once the job is done."
+                    description="A Dapp made for people to post work and get paid via crypto once the job is done, Automated fund transfer."
                     previewLink="https://x.com/kartik___doda/status/1850478191934394825"
                     githubLink="https://github.com/dodaa08/Quick-gigs"
                     techStack={["Next.js", "Supabase", "Solidity", "Tailwind"]}
                     status="Done"
                 />
+                
                 <ProjectCard
-                    title="SellMeUp"
-                    imageSrc={trading}
-                    description="An Algorithmic Trading Platform, which helps you create an order book of BTC-USD pair, Get the Depth, Get Quotes in graphical representation."
-                    previewLink="https://x.com/kartik___doda/status/1866609895891669416"
-                    githubLink="https://github.com/dodaa08/Trading-System"
-                    techStack={["React.js", "Node.js", "MongoDB", "Express"]}
-                    status="In Progress"
-                />
-                <ProjectCard
-                    title="Edvo"
-                    imageSrc={edvo}
-                    description="A course Selling Platform, where you can sell and buy courses using joy a digital currency for my platform."
+                    title="SpamurAi"
+                    imageSrc={spamurai}
+                    description="I've built an AI tool for users to now send cold Emails using AI, One Click!"
                     previewLink=""
-                    githubLink="https://github.com/dodaa08/Edvo"
-                    techStack={["React.js", "Node.js", "MongoDB", "Express"]}
+                    githubLink="https://github.com/dodaa08/SpamurAI"
+                    techStack={["React.js", "Node.js", "MongoDB", "Hugging Face", "Move"]}
                     status="In Progress"
                 />
                 
@@ -56,19 +57,20 @@ export default function Page() {
 
             <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
             <ProjectCard
-                    title="Spamurai"
-                    imageSrc={spamurai}
-                    description="An AI Email Writer-Sender, which helps you to write and send emails in a click."
+                    title="Course Selling App"
+                    imageSrc={edvo}
+                    description="Now Create, Sell, Buy courses using Joy, A digital asset for my platform."
                     previewLink=""
-                    githubLink="https://github.com/dodaa08/SpamurAI"
-                    techStack={["React.js", "Node.js", "MongoDB", "Hugging Face", "Move"]}
+                    githubLink="https://github.com/dodaa08/Edvo"
+                    techStack={["React.js", "Node.js", "MongoDB", "Express"]}
                     status="In Progress"
                 />
+            
             <ProjectCard
-                    title="A FreeLancing Platform"
+                    title="Freelancing platform"
                     imageSrc={sih}
-                    description="A Freelancing platform, Empowring the Employbility in India."
-                    previewLink="https://x.com/kartik___doda/status/1832169622386233410"
+                    description="Built an end to end platform with payment Integration during SIH"
+                    previewLink="https://skillseva.vercel.app/"
                     githubLink="https://github.com/dodaa08/SkillSeva-"
                     techStack={["Next.js", "Supabase", "Stripe", "Tailwind"]}
                     status="Done"
@@ -77,20 +79,20 @@ export default function Page() {
               <ProjectCard
                     title="Broken Supply Chains"
                     imageSrc={sp}
-                    description="Get connected with the best suppliers in the market."
+                    description="Let's fix the broken supply chains. A platform built to help you filter out the best suppliers."
                     previewLink=""
                     githubLink="https://github.com/dodaa08/Supply-chain-optimization"
                     techStack={["Python", "Streamlit", "Pandas", "Numpy"]}
                     status="Done"
                 />
             </div>
+           
             {/* Second row of project cards */}
-            <div className='flex  justify-center gap-8'>
-                
-                <ProjectCard
+            <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
+            <ProjectCard
                     title="Dholo"
                     imageSrc={laundry}
-                    description="Now book a Laundry one click."
+                    description="An Android App built using java, Now Manage, Book and get Laundry on time!"
                     previewLink="https://dholoapp.netlify.app/"
                     githubLink="https://github.com/dodaa08/DholoApp"
                     techStack={["Java", "XML", "Firebase"]}
@@ -99,13 +101,15 @@ export default function Page() {
                 <ProjectCard
                     title="Crypto Wallet"
                     imageSrc={wallet}
-                    description="Working on making the UX easy for onboarding users."
+                    description="A Crypto wallet, Let's you Create Wallet, import wallets, Send Crypto, Swap Crypto."
                     previewLink="https://store-crypto.vercel.app/"
                     githubLink="https://github.com/dodaa08/CryptoWallet"
-                    techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind"]}
+                    techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind", "Jupiter API"]}
                     status="Done"
                 />
+               
             </div>
+            
 
             
         </main>

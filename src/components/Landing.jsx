@@ -4,6 +4,8 @@ import React from "react";
 import Link from "next/link";
 import { Github, Twitter, Linkedin, Youtube, Instagram, File } from "lucide-react";
 
+
+
 function Landing() {
     return (
         <div className="min-h-screen flex flex-col justify-center items-center px-4 md:px-16 lg:px-24 translate-y-[-4%]">
@@ -12,14 +14,15 @@ function Landing() {
                 <div className="space-y-4 text-left">
                     <h1 className="text-3xl font-mono font-bold">Hi, I am Kartik</h1>
                     <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                        I am a Fullstack developer. I build web applications and smart contracts using Ethereum and other blockchain technologies.
+                        I am a Fullstack developer. I build web applications and smart contracts using Ethereum and Solana.
                     </p>
                     <p className="text-base sm:text-lg md:text-xl leading-relaxed">
                         I enjoy contributing to open-source projects and collaborating with like-minded individuals to create meaningful solutions.
                     </p>
                     <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                        I am currently learning Solana Development and I am open to Freelance work.
+                        You can view my Active projects on Twitter, I am open to Freelance work.
                     </p>
+                    
                 </div>
 
                 {/* Social Links Section */}
@@ -53,6 +56,7 @@ function Landing() {
                     </div>
                 </div>
             </div>
+                    
         </div>
     );
 }

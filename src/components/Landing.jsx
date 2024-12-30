@@ -14,13 +14,13 @@ function Landing() {
                 <div className="space-y-4 text-left">
                     <h1 className="text-3xl font-mono font-bold">Hi, I am Kartik</h1>
                     <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                        I am a Fullstack developer. I build web applications and smart contracts using Ethereum and Solana.
+                        I am a Fullstack Web3 developer. I build web applications and smart contracts.
                     </p>
                     <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                        I enjoy contributing to open-source projects and collaborating with like-minded individuals to create meaningful solutions.
+                        I enjoy contributing to open-source projects and Collaborating with people, I am currently learning Solana Development, View my active projects on Twitter.
                     </p>
                     <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                        You can view my Active projects on Twitter, I am open to Freelance work.
+                       Besides coding I love travelling and playing Sports. 
                     </p>
                     
                 </div>

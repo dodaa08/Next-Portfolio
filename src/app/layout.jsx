@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtdjHccMvk0tXptYKvmhsNSK1wyKUXqoohOA&s" />
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden overflow-y-auto h-auto m-0 p-0`}>
-        <div className={`${darkmode ? 'bg-white text-black' : ' bg-black/95 text-white'} flex flex-col min-h-screen`}>
+        <div className={`${darkmode ? 'bg-stone-200 text-black' : ' bg-black/95 text-white'} flex flex-col min-h-screen`}>
           {/* Header Section */}
           <Header darkmode={darkmode} toggleDarkMode={toggleDarkMode} />
 

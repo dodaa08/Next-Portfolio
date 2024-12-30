@@ -13,7 +13,6 @@ type ProjectCardProps = {
   status: string;
 };
 
-
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   imageSrc,
@@ -47,12 +46,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <p className="text-lg text-gray-600 mb-6">{description}</p>
       </div>
       <div className="flex justify-around mt-4">
-        <Link href={previewLink}>
+        <Link href={previewLink} target="_blank">
           <button onClick={generateToast} className="hover:scale-105 transition duration-200 hover:underline">
             Preview
           </button>
         </Link>
-        <Link href={githubLink}>
+        <Link href={githubLink} target="_blank">
           <button className="hover:scale-105 transition duration-200 hover:underline">Github</button>
         </Link>
       </div>

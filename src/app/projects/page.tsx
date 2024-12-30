@@ -5,10 +5,10 @@ import ProjectCard from '../../components/ProjectCard';
 import quickgigs from '../../imgs/quickgigs.png';
 import skillseva from "../../imgs/project2nd.jpg";
 import dholo from "../../imgs/project3.png";
+import sp from "../../imgs/spchain.jpg"
 import spamurai from "../../imgs/spamurai.jpg";
 import gig from "../../imgs/gig.webp";
 import sih from "../../imgs/sih.jpg";
-import sp from "../../imgs/supply.webp";
 import laundry from "../../imgs/laundry.gif";
 import wallet from "../../imgs/wallet.jpg";
 import trading from "../../imgs/tarde.webp";
@@ -20,7 +20,10 @@ export default function Page() {
     
     return (
         <>
-        <main className="flex flex-col items-center space-y-8 px-4 py-10">
+        <main className="flex flex-col items-center space-y-8 px-4 py-10" id='projects'>
+            <div className='mb-10 border-b  border-gray-400'>
+            <h1 className='text-3xl  font-mono '>Projects</h1>
+            </div>
             {/* First row of project cards */}
             <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
             <ProjectCard
@@ -30,7 +33,7 @@ export default function Page() {
                     previewLink="https://tradeengine.vercel.app/"
                     githubLink="https://github.com/dodaa08/Trading-System"
                     techStack={["React.js", "Node.js", "MongoDB", "Express"]}
-                    status="Done"
+                    status=""
                 />
             <ProjectCard
                     title="SkillSeva"
@@ -39,16 +42,16 @@ export default function Page() {
                     previewLink="https://x.com/kartik___doda/status/1850478191934394825"
                     githubLink="https://github.com/dodaa08/Quick-gigs"
                     techStack={["Next.js", "Supabase", "Solidity", "Tailwind"]}
-                    status="Done"
+                    status=""
                 />
                 
                 <ProjectCard
                     title="SpamurAi"
                     imageSrc={spamurai}
-                    description="I've built an AI tool for users to now send cold Emails using AI, One Click!"
+                    description="An AI Cold Email writer and Sender to help you with all sorts of cold emailing needs."
                     previewLink=""
                     githubLink="https://github.com/dodaa08/SpamurAI"
-                    techStack={["React.js", "Node.js", "MongoDB", "Hugging Face", "Move"]}
+                    techStack={["React.js", "Node.js", "MongoDB", "Hugging Face"]}
                     status="In Progress"
                 />
                 
@@ -73,7 +76,7 @@ export default function Page() {
                     previewLink="https://skillseva.vercel.app/"
                     githubLink="https://github.com/dodaa08/SkillSeva-"
                     techStack={["Next.js", "Supabase", "Stripe", "Tailwind"]}
-                    status="Done"
+                    status=""
                 />
                
               <ProjectCard
@@ -83,7 +86,7 @@ export default function Page() {
                     previewLink=""
                     githubLink="https://github.com/dodaa08/Supply-chain-optimization"
                     techStack={["Python", "Streamlit", "Pandas", "Numpy"]}
-                    status="Done"
+                    status=""
                 />
             </div>
            
@@ -96,7 +99,7 @@ export default function Page() {
                     previewLink="https://dholoapp.netlify.app/"
                     githubLink="https://github.com/dodaa08/DholoApp"
                     techStack={["Java", "XML", "Firebase"]}
-                    status="Done"
+                    status=""
                 />
                 <ProjectCard
                     title="Crypto Wallet"
@@ -105,7 +108,7 @@ export default function Page() {
                     previewLink="https://store-crypto.vercel.app/"
                     githubLink="https://github.com/dodaa08/CryptoWallet"
                     techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind", "Jupiter API"]}
-                    status="Done"
+                    status=""
                 />
                
             </div>

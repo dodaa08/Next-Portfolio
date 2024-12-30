@@ -65,28 +65,29 @@ const PublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string | undefin
       {/* Toast container */}
       <ToastContainer />
       <div>
-           <h1 className="text-2xl text-center py-10">Let's Talk</h1>
+           <h1 className="text-xl text-center py-10">Team up for a Hackathons, Collaborate for building projects or anything..</h1>
+           <h1 className="text-xl text-center py-10">Let's Talk</h1>
       </div>
       
       <div className="flex justify-center">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 text-black">
           <input
             type="text"
             placeholder="Name"
-            className=" text-white rounded-xl py-3 w-72 px-7 border-gray-800 border-2 bg-black"
+            className="  rounded-xl py-3 w-72 px-7 border-gray-800 border-2 "
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="email"
             placeholder="Email"
-            className="bg-black text-white rounded-xl py-3 w-72 px-7 border-gray-800 border-2"
+            className="  rounded-xl py-3 w-72 px-7 border-gray-800 border-2"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <textarea
             placeholder="Message"
-            className="bg-black text-white rounded-xl py-3 w-72 px-7 border-gray-800 border-2"
+            className=" rounded-xl py-3 w-72 px-7 border-gray-800 border-2"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />

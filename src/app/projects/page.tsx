@@ -44,8 +44,22 @@ export default function Page() {
                     techStack={["Next.js", "Supabase", "Solidity", "Tailwind"]}
                     status=""
                 />
+                 <ProjectCard
+                    title="Freelancing platform"
+                    imageSrc={sih}
+                    description="Built an end to end platform with payment Integration during SIH"
+                    previewLink="https://skillseva.vercel.app/"
+                    githubLink="https://github.com/dodaa08/SkillSeva-"
+                    techStack={["Next.js", "Supabase", "Stripe", "Tailwind"]}
+                    status=""
+                />
+               
                 
-                <ProjectCard
+                
+            </div>
+
+            <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
+            <ProjectCard
                     title="SpamurAi"
                     imageSrc={spamurai}
                     description="An AI Cold Email writer and Sender to help you with all sorts of cold emailing needs."
@@ -54,11 +68,6 @@ export default function Page() {
                     techStack={["React.js", "Node.js", "MongoDB", "Hugging Face"]}
                     status="In Progress"
                 />
-                
-                
-            </div>
-
-            <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
             <ProjectCard
                     title="Course Selling App"
                     imageSrc={edvo}
@@ -69,25 +78,17 @@ export default function Page() {
                     status="In Progress"
                 />
             
+           
             <ProjectCard
-                    title="Freelancing platform"
-                    imageSrc={sih}
-                    description="Built an end to end platform with payment Integration during SIH"
-                    previewLink="https://skillseva.vercel.app/"
-                    githubLink="https://github.com/dodaa08/SkillSeva-"
-                    techStack={["Next.js", "Supabase", "Stripe", "Tailwind"]}
+                    title="Crypto Wallet"
+                    imageSrc={wallet}
+                    description="A Crypto wallet, Let's you Create Wallet, import wallets, Send Crypto, Swap Crypto."
+                    previewLink="https://cwallet.vercel.app/"
+                    githubLink="https://github.com/dodaa08/CryptoWallet"
+                    techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind", "Jupiter API"]}
                     status=""
                 />
-               
-              <ProjectCard
-                    title="Broken Supply Chains"
-                    imageSrc={sp}
-                    description="Let's fix the broken supply chains. A platform built to help you filter out the best suppliers."
-                    previewLink=""
-                    githubLink="https://github.com/dodaa08/Supply-chain-optimization"
-                    techStack={["Python", "Streamlit", "Pandas", "Numpy"]}
-                    status=""
-                />
+
             </div>
            
             {/* Second row of project cards */}
@@ -95,20 +96,20 @@ export default function Page() {
             <ProjectCard
                     title="Dholo"
                     imageSrc={laundry}
-                    description="An Android App built using java, Now Manage, Book and get Laundry on time!"
-                    previewLink="https://dholoapp.netlify.app/"
+                    description="An Android App built using java, Now Manage, Book and get Laundry on time! (Preview an mp4 for now.)"
+                    previewLink="https://dholo.vercel.app"
                     githubLink="https://github.com/dodaa08/DholoApp"
                     techStack={["Java", "XML", "Firebase"]}
                     status=""
                 />
-                <ProjectCard
-                    title="Crypto Wallet"
-                    imageSrc={wallet}
-                    description="A Crypto wallet, Let's you Create Wallet, import wallets, Send Crypto, Swap Crypto."
-                    previewLink="https://store-crypto.vercel.app/"
-                    githubLink="https://github.com/dodaa08/CryptoWallet"
-                    techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind", "Jupiter API"]}
-                    status=""
+                              <ProjectCard
+                    title="Broken Supply Chains"
+                    imageSrc={sp}
+                    description="Let's fix the broken supply chains. A platform built to help you filter out the best suppliers."
+                    previewLink=""
+                    githubLink="https://github.com/dodaa08/Supply-chain-optimization"
+                    techStack={["Python", "Streamlit", "Pandas", "Numpy"]}
+                    status="Left with Deployments"
                 />
                
             </div>

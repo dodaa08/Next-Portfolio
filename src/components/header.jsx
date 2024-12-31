@@ -2,6 +2,7 @@ import React from 'react';
 import { Moon, SunDim } from 'lucide-react';
 import Link from 'next/link';
 
+
 const Header = ({ darkmode, toggleDarkMode }) => {
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
@@ -35,13 +36,16 @@ const Header = ({ darkmode, toggleDarkMode }) => {
 
         {/* Navigation Links */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-        
+      
+
+          <Link href="/projects">
           <button
-            onClick={scrollToProjects}
+            
             className="border-2 py-2 px-5 rounded-xl border-gray-800 hover:border-gray-600 transition duration-200"
             >
             Projects
           </button>
+              </Link>
             
 
           <Link href="/blogs">
@@ -49,6 +53,14 @@ const Header = ({ darkmode, toggleDarkMode }) => {
               Blogs
             </button>
           </Link>
+
+          <Link href="/contact">
+            <button className="border-2 py-2 px-5 rounded-xl border-gray-800 hover:border-gray-600 transition duration-200">
+              Contact
+            </button>
+          </Link>
+
+          
         </div>
       </div>
     </header>

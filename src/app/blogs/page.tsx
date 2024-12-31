@@ -2,7 +2,6 @@ import appwrite from "../../imgs/appwrite.jpg";
 import react from "../../imgs/redux.jpg";
 import BlogCard from "../../components/BlogCard";
 
-
 export default function Page() {
   const blogs = [
     {
@@ -23,21 +22,21 @@ export default function Page() {
       imageSrc: appwrite,
       previewLink: "https://readyy.hashnode.dev/appwrite-a-beginners-guide",
     },
-    
-    
   ];
 
   return (
-    <div className="flex justify-center gap-20">
-      {blogs.map((blog, index) => (
-        <BlogCard
-          key={index}
-          title={blog.title}
-          description={blog.description}
-          imageSrc={blog.imageSrc}
-          previewLink={blog.previewLink}
-        />
-      ))}
+    <div className="container mx-auto px-4">
+      <div className="flex flex-wrap justify-center gap-6">
+        {blogs.map((blog, index) => (
+          <BlogCard
+            key={index}
+            title={blog.title}
+            description={blog.description}
+            imageSrc={blog.imageSrc}
+            previewLink={blog.previewLink}
+          />
+        ))}
+      </div>
     </div>
   );
 }

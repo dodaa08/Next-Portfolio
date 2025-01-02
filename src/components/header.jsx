@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Moon, SunDim } from 'lucide-react';
 import Link from 'next/link';
-
+import { Menu } from 'lucide-react';
 
 const Header = ({ darkmode, toggleDarkMode }) => {
   const scrollToProjects = () => {
@@ -14,6 +14,8 @@ const Header = ({ darkmode, toggleDarkMode }) => {
       });
     }
   };
+
+  const [menuOpen, setmenuOpen] = useState(false);
 
   return (
     <header className="flex-grow">
@@ -35,7 +37,7 @@ const Header = ({ darkmode, toggleDarkMode }) => {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+        <div className={`hidden md:flex flex-wrap justify-center gap-4 md:gap-8 `}>
       
 
           <Link href="/projects">
@@ -62,6 +64,42 @@ const Header = ({ darkmode, toggleDarkMode }) => {
 
           
         </div>
+
+        <button className='md:hidden text-white' onClick={()=>setmenuOpen((e)=>!e)}><Menu /></button>
+
+
+        {
+          menuOpen && (
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8 py-5">
+      
+
+            <Link href="/projects">
+            <button
+              
+              className="border-2 py-2 px-5 rounded-xl border-gray-800 hover:border-gray-600 transition duration-200"
+              >
+              Projects
+            </button>
+                </Link>
+              
+  
+            <Link href="/blogs">
+              <button className="border-2 py-2 px-5 rounded-xl border-gray-800 hover:border-gray-600 transition duration-200">
+                Blogs
+              </button>
+            </Link>
+  
+            <Link href="/contact">
+              <button className="border-2 py-2 px-5 rounded-xl border-gray-800 hover:border-gray-600 transition duration-200">
+                Contact
+              </button>
+            </Link>
+  
+            
+          </div>
+  
+          )
+        }
       </div>
     </header>
   );

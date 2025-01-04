@@ -68,7 +68,7 @@ const Header = ({ darkmode, toggleDarkMode }) => {
         </div>
 
         <button className='md:hidden text-white' onClick={()=>setmenuOpen((e)=>!e)}>   
-            <Image src={menu}  className='h-10 w-auto bg-gray-900 py-2 px-2 rounded-l'/>
+            <Image src={menu}  className='h-10 w-auto bg-gray-800 py-2 px-2 rounded-l'/>
           </button>
 
 

@@ -1,22 +1,12 @@
 import React, { useState } from 'react';
 import { Moon, SunDim } from 'lucide-react';
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
-import menu from "../imgs/icons8-menu-50.png"
 import Image from 'next/image';
 
-const Header = ({ darkmode, toggleDarkMode }) => {
-  const scrollToProjects = () => {
-    const projectsSection = document.getElementById('projects');
-    if (projectsSection) {
-      const top = projectsSection.offsetTop;
-      window.scrollTo({
-        top,
-        behavior: 'smooth',
-      });
-    }
-  };
 
+
+const Header = ({ darkmode, toggleDarkMode }) => {
+   
   const [menuOpen, setmenuOpen] = useState(false);
 
   return (
@@ -68,7 +58,11 @@ const Header = ({ darkmode, toggleDarkMode }) => {
         </div>
 
         <button className='md:hidden text-white' onClick={()=>setmenuOpen((e)=>!e)}>   
-            <Image src={menu}  className='h-10 w-auto bg-gray-800 py-2 px-2 rounded-l'/>
+            <div className='flex flex-col gap-1'>
+              <div className={`${darkmode && 'bg-black'} bg-white h-1 w-7 rounded`}></div>
+              <div className={`${darkmode && 'bg-black'}  bg-white h-1 w-7 rounded`}></div>
+              <div className={`${darkmode && 'bg-black'}  bg-white h-1 w-7 rounded`}></div>
+            </div>
           </button>
 
 

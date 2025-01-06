@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Moon, SunDim } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import Menu from './menu'
 
 
 const Header = ({ darkmode, toggleDarkMode }) => {
@@ -58,11 +58,7 @@ const Header = ({ darkmode, toggleDarkMode }) => {
         </div>
 
         <button className='md:hidden text-white' onClick={()=>setmenuOpen((e)=>!e)}>   
-            <div className='flex flex-col gap-1'>
-              <div className={`${darkmode && 'bg-black'} bg-white h-1 w-7 rounded`}></div>
-              <div className={`${darkmode && 'bg-black'}  bg-white h-1 w-7 rounded`}></div>
-              <div className={`${darkmode && 'bg-black'}  bg-white h-1 w-7 rounded`}></div>
-            </div>
+            <Menu darkmode={darkmode} />
           </button>
 
 

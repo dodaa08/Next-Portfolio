@@ -41,7 +41,7 @@ export default function Page() {
                     description="A Web based Crypto Wallet, Users can swap assets, create liquidity pools, Create/Import Wallets, Launch Tokens/Memecoins"
                     previewLink="https://cwallet.vercel.app/"
                     githubLink="https://github.com/dodaa08/CryptoWallet"
-                    techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind", "Jupiter API"]}
+                    techStack={["React.js","Tailwind" ,  "Web3.js", "Jupiter API"]}
                     status=""
                 />
           

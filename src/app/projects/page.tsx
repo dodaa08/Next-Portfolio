@@ -25,7 +25,7 @@ export default function Page() {
             <h1 className='text-3xl  font-mono '>Projects</h1>
             </div>
             {/* First row of project cards */}
-            <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
+            <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-5'>
             <ProjectCard
                     title="Trading Engine"
                     imageSrc={trading}
@@ -35,15 +35,16 @@ export default function Page() {
                     techStack={["React.js", "Node.js", "MongoDB", "Express"]}
                     status=""
                 />
-            <ProjectCard
-                    title="SkillSeva"
-                    imageSrc={gig}
-                    description="A Dapp made for people to post work and get paid via crypto once the job is done, Automated fund transfer."
-                    previewLink="https://x.com/kartik___doda/status/1850478191934394825"
-                    githubLink="https://github.com/dodaa08/Quick-gigs"
-                    techStack={["Next.js", "Supabase", "Solidity", "Tailwind"]}
+                  <ProjectCard
+                    title="Crypto Wallet"
+                    imageSrc={wallet}
+                    description="A Web based Crypto Wallet, Users can swap assets, create liquidity pools, Create/Import Wallets, Launch Tokens/Memecoins"
+                    previewLink="https://cwallet.vercel.app/"
+                    githubLink="https://github.com/dodaa08/CryptoWallet"
+                    techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind", "Jupiter API"]}
                     status=""
                 />
+          
                  <ProjectCard
                     title="Freelancing platform"
                     imageSrc={sih}
@@ -59,6 +60,15 @@ export default function Page() {
             </div>
 
             <div className='flex flex-col md:flex-row md:flex-wrap justify-center gap-8'>
+            <ProjectCard
+                    title="SkillSeva"
+                    imageSrc={gig}
+                    description="A Dapp made for people to post work and get paid via crypto once the job is done, Automated fund transfer."
+                    previewLink="https://x.com/kartik___doda/status/1850478191934394825"
+                    githubLink="https://github.com/dodaa08/Quick-gigs"
+                    techStack={["Next.js", "Supabase", "Solidity", "Tailwind"]}
+                    status=""
+                />                
             <ProjectCard
                     title="SpamurAi"
                     imageSrc={spamurai}
@@ -77,17 +87,9 @@ export default function Page() {
                     techStack={["React.js", "Node.js", "MongoDB", "Express"]}
                     status="In Progress"
                 />
-            
+             
            
-            <ProjectCard
-                    title="Crypto Wallet"
-                    imageSrc={wallet}
-                    description="A Crypto wallet, Let's you Create Wallet, import wallets, Send Crypto, Swap Crypto."
-                    previewLink="https://cwallet.vercel.app/"
-                    githubLink="https://github.com/dodaa08/CryptoWallet"
-                    techStack={["React.js", "Ethers.js", "Web3.js", "Tailwind", "Jupiter API"]}
-                    status=""
-                />
+          
 
             </div>
            

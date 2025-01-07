@@ -28,9 +28,6 @@ export default function Page() {
 
   return (
     <div className="container mx-auto px-4">
-      <div className="flex justify-center py-2 ">
-        <h1 className="text-2xl ">Blogs</h1>
-      </div>
       <div className="flex flex-wrap justify-center gap-6">
         {blogs.map((blog, index) => (
           <BlogCard

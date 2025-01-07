@@ -5,17 +5,8 @@ import Image from "next/image";
 function BlogCard({ title, imageSrc, description, previewLink }) {
   return (
     <div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/4 p-4">
-      <div className="flex flex-col py-3 px-6 rounded-xl shadow-md border-2 border-gray-700 font-mono transition-transform transform">
+      <div className="flex flex-col py-3 px-6 rounded-xl shadow-md border-gray-700 font-mono transition-transform transform">
         <div className="border-b py-4 border-gray-600 mb-4">
-          <div className="flex justify-center mb-4">
-            <Image
-              src={imageSrc}
-              alt={title}
-              className="h-20 w-auto rounded-xl object-cover"
-              width={96}
-              height={96}
-            />
-          </div>
           <h1 className="text-xl font-semibold text-center  ">{title}</h1>
         </div>
         <p className="text-md  text-center mb-4">{description}</p>

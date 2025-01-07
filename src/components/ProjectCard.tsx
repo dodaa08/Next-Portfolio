@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div className="border-b border-gray-500 h-max shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10 rounded-xl">
+    <div className="border-gray-500 h-max shadow-md rounded-lg p-8 max-w-md w-full hover:shadow-lg transition duration-200 cursor-pointer mb-10 rounded-xl">
       <div className="flex justify-center mb-6 border-b border-gray-300">
         <Image src={imageSrc} alt={title} className="h-40 w-auto rounded-xl mb-4" />
       </div>

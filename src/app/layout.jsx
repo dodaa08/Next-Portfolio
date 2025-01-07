@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "../components/header"; // Import the Header component
 import React, { useState } from "react";
 import Head from "next/head";
+import favicon from "./favicon.ico"
 
 const geistSans = local({
   src: "./fonts/GeistVF.woff",
@@ -28,9 +29,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <title>Kartik Doda | Portfolio</title>
-        <meta name="description" content="Kartik Doda's Portfolio" />
-        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtdjHccMvk0tXptYKvmhsNSK1wyKUXqoohOA&s" />
+        <title>Kartikdoda.tech</title>
+        <meta name="Kartikdoda.tech" content="Kartik Doda's Portfolio" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden overflow-y-auto h-auto m-0 p-0`}>
         <div className={`${darkmode ? 'bg-stone-200 text-black' : ' bg-black/95 text-white'} flex flex-col min-h-screen`}>
@@ -44,7 +45,7 @@ export default function RootLayout({ children }) {
 
           {/* Footer */}
           <footer className="flex justify-center mt-auto py-4">
-            <h1 className="text-sm md:text-base">2024 @kartikdoda.tech</h1>
+            <h1 className="text-sm md:text-base">2025 @kartikdoda.tech</h1>
           </footer>
         </div>
       </body>

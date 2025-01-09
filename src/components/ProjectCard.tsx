@@ -22,8 +22,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   techStack,
   status = "In Progress",
 }) => {
-  const generateToast = () => {
-    if (previewLink === "") {
+  const handlePreviewClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    if (!previewLink) {
+      event.preventDefault(); // Prevent redirection
       toast.error("Project in progress, view GitHub..", {
         position: "top-right",
         autoClose: 3000,
@@ -47,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
       <div className="flex justify-around mt-4">
         <Link href={previewLink} target="_blank">
-          <button onClick={generateToast} className="hover:scale-105 transition duration-200 hover:underline">
+          <button onClick={handlePreviewClick} className="hover:scale-105 transition duration-200 hover:underline">
             Preview
           </button>
         </Link>

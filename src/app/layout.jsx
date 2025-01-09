@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
           <Header darkmode={darkmode} toggleDarkMode={toggleDarkMode} />
 
           {/* Main Content */}
-          <main className="flex-grow">
+          <main className="">
             {children}
           </main>
 

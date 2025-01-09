@@ -23,11 +23,25 @@ export default function Page() {
       imageSrc: appwrite,
       previewLink: "https://readyy.hashnode.dev/appwrite-a-beginners-guide",
     },
+    {
+      title: "Figma",
+      description: "Design your first project using Figma and UI/UX Principles (In Progress)",
+      imageSrc: appwrite,
+      previewLink: "",
+    },
+    {
+      title: "Linux",
+      description: "Learn Ubuntu, all commands and info here will be enough to get you started (In Progress)",
+      imageSrc: appwrite,
+      previewLink: "",
+    },
     
   ];
 
+
+
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto transform -translate-y-20 sm:py-20">  
       <div className="flex flex-wrap justify-center gap-6">
         {blogs.map((blog, index) => (
           <BlogCard

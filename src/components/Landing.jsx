@@ -9,7 +9,10 @@ import {
   Youtube,
   Instagram,
   File,
+  Rss 
 } from "lucide-react";
+
+
 
 function Landing() {
   return (
@@ -17,7 +20,7 @@ function Landing() {
       <div className="container mx-auto px-6 sm:px-10 lg:px-20">
         {/* Intro Section */}
         <div className="flex flex-col items-center text-center gap-6">
-          <h1 className="text-3xl sm:text-4xl font-bold">
+          <h1 className="text-xl sm:text-4xl font-bold">
             Hi, I am Kartik
           </h1>
           <p className="text-lg sm:text-xl max-w-3xl">
@@ -57,6 +60,14 @@ function Landing() {
               <span>@kartik___doda</span>
             </Link>
             <Link
+              href="https://panoptic08.hashnode.dev/?source=top_nav_blog_home"
+              className="flex items-center gap-3  "
+              target="_blank"
+              >
+              <Rss />
+              <span>@Blogs</span>
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/kartikd4152g/"
               className="flex items-center gap-3 "
               >
@@ -77,8 +88,9 @@ function Landing() {
               <Instagram />
               <span>@kartik__doda</span>
             </Link>
+           
             <Link
-              href="#"
+              href="https://drive.google.com/file/d/1vEpjBriQgoAOqBOVuCIiki896NGAZORt/view?usp=drive_link"
               className="flex items-center gap-3  "
               >
               <File />

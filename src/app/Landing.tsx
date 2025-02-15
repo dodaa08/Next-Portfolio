@@ -5,9 +5,10 @@ import Dp from "../components/Dp";
 import Bottom from "../components/Bottombar";
 
 const Landing= ()=>{
+    
     return(
         <>
-        <div className="bg-gary-900  xl:flex xl:justify-center">
+        <div className="bg-gray-200 h-screen xl:flex xl:justify-center">
                 <div >
                 <Header />
 

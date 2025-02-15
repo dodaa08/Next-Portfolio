@@ -1,0 +1,9 @@
+{
+    "framework": "vite",
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+  

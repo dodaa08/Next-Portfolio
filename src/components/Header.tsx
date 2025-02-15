@@ -1,11 +1,9 @@
-import { Menu } from 'lucide-react';
-import { useState } from 'react';
+
 
 import { Link } from 'react-router-dom';
 
 
 const Header = ()=>{
-   const [Show, setShow] = useState(false);
 
 return(
     <>
@@ -19,8 +17,8 @@ return(
 
             
             <div className={`py-14 px-10 flex space-x-15 text-xl text-green-700 font-sans `}> 
-               {
-                  Show ? <Menu className='cursor-pointer'/> : <>
+               
+                 
                <Link  to='/'>
                <button className="cursor-pointer">Home</button>
                </Link>
@@ -31,10 +29,9 @@ return(
                <button className="cursor-pointer">Blogs</button>
                </Link>
                
-                  </>
-               }
+                 
             </div>
-            {/* <Menu /> */}
+            
          </div>
         </div>
     </>

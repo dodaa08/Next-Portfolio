@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
 import { FC } from "react";
-import { useEffect, useState } from "react";
-import useWindowSize from "../Hooks/WindowSize";
+// import { useEffect, useState } from "react";
+// import useWindowSize from "../Hooks/WindowSize";
 interface Sidebar{
     isOpen : boolean
 }
 
 const Sidebar : FC<Sidebar> = ({ isOpen }) => {
-  const [Showmnu, Setshowmnu] = useState(true);
-  const width = useWindowSize(); // ✅ Get window width directly 
-  useEffect(() => {
-    if (width <= 700) {
-       Setshowmnu(false);
-    }
-    else{
-      Setshowmnu(true);
-    }
- }, [width]);
+//   const [Showmnu, Setshowmnu] = useState(true);
+//   const width = useWindowSize(); // ✅ Get window width directly 
+//   useEffect(() => {
+//     if (width <= 700) {
+//        Setshowmnu(false);
+//     }
+//     else{
+//       Setshowmnu(true);
+//     }
+//  }, [width]);
   return (
     <div
         className={`fixed top-0 right-0 w-screen h-full bg-gray-200 border-2 border-gray-200 flex justify-center py-40 z-50 transition-transform duration-500 ease-in-out ${

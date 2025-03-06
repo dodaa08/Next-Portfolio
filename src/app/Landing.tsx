@@ -21,7 +21,7 @@ const Landing= ()=>{
         <>
          <div className="bg-gray-200 sm:h-screen flex flex-col">
             <Header />
-            <div className="sm:ml-40 md:mr-40 md:flex md:justify-center md:mt-30  md:space-x-40">
+            <div className="sm:ml-40 md:mr-40 md:flex md:justify-center md:mt-30  md:space-x-48">
                 {!showDp && (
                     <div className="mt-20 ml-30">
                         <Dp h={150} w={150} />

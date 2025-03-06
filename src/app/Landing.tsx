@@ -19,7 +19,7 @@ const Landing= ()=>{
 
     return(
         <>
-         <div className="flex flex-col">
+         <div className="bg-gray-200 sm:h-screen flex flex-col">
             <Header />
             <div className="sm:ml-40 md:mr-40 md:flex md:justify-center md:mt-30  md:space-x-40">
                 {!showDp && (

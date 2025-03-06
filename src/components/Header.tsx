@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import useWindowSize from "../Hooks/WindowSize";
 import Sidebar from "../components/Sidebar";
 
-
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Sidebar state
   const [Showmnu, Setshowmnu] = useState(true);
@@ -23,11 +22,12 @@ const Header = () => {
   return (
     
     <div className=" ">
+      
         <Sidebar isOpen={isSidebarOpen} />
       <div className="flex justify-around space-x-20 h-full">
         <div className="py-12 px-10">
           <Link to="/">
-            <h1 className="text-2xl font-sans">kartikdoda.tech</h1>
+            <h1 className={`text-xl md:text-2xl font-sans`}>kartikdoda.tech</h1>
           </Link>
         </div>
 

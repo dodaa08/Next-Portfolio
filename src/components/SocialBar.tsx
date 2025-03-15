@@ -6,7 +6,6 @@ import { Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { FileUser } from 'lucide-react';
 
-
 const SocialBar = ()=>{
     return(
         <>
@@ -14,7 +13,7 @@ const SocialBar = ()=>{
         <Link target='_blank' to="https://github.com/dodaa08">
         <Github className='cursor-pointer'/>
         </Link>
-        <Link target='_blank' to="https://x.com/0xkartikk">
+        <Link target='_blank' to="https://x.com/kartik0x1">
         <Twitter className='cursor-pointer'/>
         </Link>
         <Link target='_blank' to="https://www.youtube.com/@Kartik_Doda">

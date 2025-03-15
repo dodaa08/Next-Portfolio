@@ -4,7 +4,7 @@ const Body = () => {
    
 
       <p className="flex flex-wrap">
-        I am a <span className="px-2 text-green-500">Web3</span> Developer.
+        I am a <span className="px-2 text-green-600">Web3</span> Developer.
       </p>
       <p className="sm:flex md:flex md:flex-wrap">
         I like building <span className="px-2 underline">FOSS</span> and I enjoy contributing to open-source codebases.

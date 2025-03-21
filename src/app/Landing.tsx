@@ -1,20 +1,20 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Body from "../components/Body";
 import SocialBar from "../components/SocialBar";
-import Dp from "../components/Dp";
+// import Dp from "../components/Dp";
 import Bottom from "../components/Bottombar";
 
-import useWindowSize from "../Hooks/WindowSize";
+// import useWindowSize from "../Hooks/WindowSize";
 
 const Landing = () => {
-  const width = useWindowSize();
-  const [showDp, setShowDp] = useState(width >= 600);
+  // const width = useWindowSize();
+  // const [showDp, setShowDp] = useState(width >= 600);
 
 
-  useEffect(() => {
-    setShowDp(width >= 600);
-  }, [width]);
+  // useEffect(() => {
+  //   setShowDp(width >= 600);
+  // }, [width]);
 
   return (
     <>

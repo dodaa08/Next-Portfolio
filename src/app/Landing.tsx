@@ -21,11 +21,11 @@ const Landing = () => {
       <div className="bg-gray-200 sm:h-screen md:h-screen sm:w-screen md:w-full flex flex-col">
         <Header />
         <div className="sm:ml-40 md:mr-40 md:flex md:justify-center md:mt-28  md:space-x-48">
-          {!showDp && (
+          {/* {!showDp && (
             <div className="mt-20 ml-30">
               <Dp h={150} w={150} />
             </div>
-          )}
+          )} */}
           <div className="flex flex-col gap-10 px-20">
             <Body />
             <SocialBar />
@@ -33,11 +33,11 @@ const Landing = () => {
               <Bottom />
             </div>
           </div>
-          {showDp && (
+          {/* {showDp && (
             <div className="py-12">
               <Dp h={200} w={200} />
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </>

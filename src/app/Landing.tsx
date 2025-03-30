@@ -1,46 +1,44 @@
-// import { useState, useEffect } from "react";
 import Header from "../components/Header";
-import Body from "../components/Body";
-import SocialBar from "../components/SocialBar";
-// import Dp from "../components/Dp";
-import Bottom from "../components/Bottombar";
-
-// import useWindowSize from "../Hooks/WindowSize";
 
 const Landing = () => {
-  // const width = useWindowSize();
-  // const [showDp, setShowDp] = useState(width >= 600);
-
-
-  // useEffect(() => {
-  //   setShowDp(width >= 600);
-  // }, [width]);
-
   return (
-    <>
-      <div className="bg-gray-200 sm:h-screen md:h-screen sm:w-screen md:w-full flex flex-col">
-        <Header />
-        <div className="sm:ml-40 md:mr-40 md:flex md:justify-center md:mt-28  md:space-x-48">
-          {/* {!showDp && (
-            <div className="mt-20 ml-30">
-              <Dp h={150} w={150} />
-            </div>
-          )} */}
-          <div className="flex flex-col gap-10 px-20">
-            <Body />
-            <SocialBar />
-            <div className="mt-5">
-              <Bottom />
-            </div>
+    <div className="bg-neutral-900 min-h-screen flex flex-col text-white items-center py-2">
+      
+      {/* Centered Header */}
+     
+
+      {/* Main Content */}
+      <div className="p-6 flex justify-center">
+        <div className="max-w-[900px] text-center"> {/* Adjust width as needed */}
+          <h1 className="text-3xl text-white/80 font-bold">
+            Kartikdoda.tech
+          </h1>
+
+          <div className="mt-6 text-lg text-white/85 leading-relaxed">
+            <p>
+              <h1 className="text-2xl py-5">Hi, </h1> 
+
+              I’m a <span className="text-yellow-500">FullStack Web3 Developer</span> with interest in 
+              <span className="text-yellow-500"> Blockchain, Distributed Systems,</span> and backend engineering.
+            </p>
+
+            <p className="mt-4">
+              I enjoy architecting scalable backend systems, optimizing performance, and exploring how decentralized technologies shape the future. 
+            </p>
+
+            <p className="mt-4">
+              Right now, I'm learning more about 
+              <span className="text-yellow-500"> distributed computing, Solana,</span> and how blockchain networks maintain consensus.
+            </p>
+
+            <p className="mt-4">
+              When I’m not coding, I’m probably contributing to open-source projects, playing Sports, or experimenting with new tech stacks.
+            </p>
           </div>
-          {/* {showDp && (
-            <div className="py-12">
-              <Dp h={200} w={200} />
-            </div>
-          )} */}
         </div>
       </div>
-    </>
+      <Header />
+    </div>
   );
 };
 

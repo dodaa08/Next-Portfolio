@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-      "@vitejs/plugin-react": "^4.0.0",
     "@tailwindcss/vite": "^4.0.6",
+    "@vitejs/plugin-react": "^4.0.0",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

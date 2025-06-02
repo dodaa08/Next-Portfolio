@@ -11,7 +11,7 @@
         <div className="flex flex-col md:flex-row"> 
           {/* Main Navigation */}
           <div className="flex flex-col px-10 gap-2">
-            <Link to="/">
+            {/* <Link to="/">
               <div className="flex gap-2 underline transition duration-400 decoration-gray-500 hover:decoration-dotted hover:decoration-gray-400 cursor-pointer">
                 <House className="text-yellow-400" />
                 <button className="text-yellow-500 text-xl cursor-pointer"> Home </button>
@@ -30,7 +30,7 @@
               <Logs className="text-yellow-400" />
               <button className="text-yellow-500 text-xl cursor-pointer"> Blogs </button>
             </div>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Socials Section - Now positioned below on smaller screens */}

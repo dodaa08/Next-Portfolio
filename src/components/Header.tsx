@@ -1,5 +1,5 @@
   import { Link } from "react-router-dom";
-  import { House, FolderDot, Logs, Triangle, Dot } from "lucide-react";
+  import {  Triangle, Dot } from "lucide-react";
 
   const Header = () => {
     return (
